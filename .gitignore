@@ -8,6 +8,10 @@ node_modules/
 dist/
 web-build/
 
+*.app
+
+*.tar.gz
+
 # Native
 *.orig.*
 *.jks

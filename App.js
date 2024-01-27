@@ -37,14 +37,14 @@ export default function App() {
   }
 
   const takePhoto = async () => {
-    let options = {
-      quality: 1,
-      base64: true,
-      fixOrientation: true,
-      exif: true,
-    };
+    // let options = {
+    //   quality: 1,
+    //   base64: true,
+    //   fixOrientation: true,
+    //   exif: true,
+    // };
     if (cameraRef) {
-      let newPhoto = await cameraRef.current.takePictureAsync(options);
+      let newPhoto = await cameraRef.current.takePictureAsync();
       setPhoto(newPhoto);
     }
   };
